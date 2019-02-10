@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-barra fixed-top" >
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <%= image_tag "logo.png", class: "img-responsive img-fluid", alt:"Logo", width: "450", height: "300"%>
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item  mr-4">
+          <%= link_to "Inicio", root_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item  mr-4">
+             <%= link_to "Gulfood",root_path, class: 'nav-link' , href: '#empresas'%>
+          </li>
+          <li class="nav-item  mr-4">
+          <%= link_to "Empresas", root_path, class: 'nav-link', href:'#emp'%>
+          </li>
+          <li class="nav-item  mr-4">
+          <%= link_to "Exportaciones", root_path, class: 'nav-link', href:'#expo' %>
+          </li>
+          <li class="nav-item  mr-4">
+          <%= link_to "Estadísticas", root_path, class: 'nav-link', href: '#estadistica'%>
+          </li>
+          <li class="nav-item  mr-4">
+          <%= link_to "Oportunidades", root_path, class: 'nav-link', href: '#oportunities'%>
+          </li>
+          <li class="nav-item  mr-4">
+          <%= link_to "Contacto", root_path, class: 'nav-link', href: '#contacto'%>
+          </li>
+        </ul>
+      </div>
+    </div>    
+  </nav>
+<!--       CAROUSEL       -->
+ <div id="carouselFull" class="carousel slide" data-ride="carousel">
+   <ol class="carousel-indicators">
+     <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+     <li data-target="#carouselIndicators" data-slide-to="1"></li>
+     <li data-target="#carouselIndicators" data-slide-to="2"></li>
+   </ol>
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+      <%= image_tag "legumbres.jpg", class: "d-block img-fluid", alt: "First slide"%>
+
+      <div class="carousel-caption d-md-block">
+       <h3>Legumbres</h3>
+       <p >El poroto es una legumbre que tiene al NOA como epicentro de  producción, donde el cultivo se encuentra muy arraigado por factores históricos y culturales, y por contar con suelos y climas muy propicios</p>
+     </div>
+   </div>
+   <div class="carousel-item">
+    <%= image_tag "maiz.jpg", class: "d-block img-fluid", alt: "Second slide"%>
+
+    <div class="carousel-caption d-md-block">
+     <h3>Maiz</h3>
+     <p> Los resultados productivos del cultivo de maíz en Tucumán, campaña 2017/18 determinaron que la produccion fue de 514.000 t, fue superior a la del ciclo anterior.
+</p>
+   </div>
+ </div>
+  <div class="carousel-item">
+    <%= image_tag "trigo.jpg", class: "d-block img-fluid", alt: "Third slide"%>
+
+    <div class="carousel-caption d-md-block">
+     <h3>Trigo</h3>
+     <p>En 2016, Tucumán tuvo un incremento del 18% en la superficie sembrada con trigo, respecto a la de 2015, al tiempo que se observó un crecimiento importante respecto a los años anteriores.</p>
+   </div>
+ </div>
+ 
+</div>
+<a class="carousel-control-prev" href="#carouselFull" role="button" data-slide="prev">
+ <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+ <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselFull" role="button" data-slide="next">
+ <span class="carousel-control-next-icon" aria-hidden="true"></span>
+ <span class="sr-only">Next</span>
+</a>
+
+</div>
+<script>
+
+$('.carousel').carousel({
+  interval: 2000
+});
+</script>
+
+
+<div id="about" class="container">
+  <div class="starter-template">
+    <h3 style="font-family: 'Comic Sans MS', cursive, sans-serif;font-weight: lighter;color:#8A8A8A;">Nuestra misión es asistir al Ministerio de Desarrollo Productivo, en la determinación de las políticas necesarias para el ordenamiento, promoción, desarrollo y ejecución de la producción económica de la Provincia, incentivando las inversiones ambientalmente sustentables</h3>
+    
+  </div>
+
+<div id="empresas">
+          <div class="col-md-6 offset-md-3">      
+          <%= image_tag "gulfood.png", class: "img-fluid img-responsive",  alt: "team",width: "500", height:"500"%>
+  
+          <h3 style="font-family: 'Comic Sans MS', cursive, sans-serif;font-weight: lighter;color:#8A8A8A; font-size: 20px; text-align: center;"> Es considerada el evento anual de alimentos más grande del mundo. 
+          </h3>
+         </div>
+   
+
+</div>
+
+<br><p></p>
+ 
+<!--  GRID EMPRESAS -->
+<div id="emp" class="row">
+    <div class="col-6 col-md-4">
+     <div class="hovereffect">
+       <%= image_tag "logoLG.webp", class: "img-responsive", alt: "",width: "350", height:"300" %>
+     <div class="overlay">
+      <h2>LG Food - Jorge Lopez Ibarra </h2>
+      <%= link_to "Info", lopez_index_path, class: 'info' %>
+
+
+
+     </div>
+    </div>
+  </div>
+
+    <div class="col-6 col-md-4">
+     <div class="hovereffect">
+       <%= image_tag "marti.png", class: "img-responsive", alt: "", width: "350", height:"300" %>
+     <div class="overlay">
+      <h2>Las Martinetas </h2>
+           <%= link_to "Info", martineta_index_path, class: 'info' %>
+     </div>
+    </div>
+  </div>
+
+   <div class="col-6 col-md-4">
+     <div class="hovereffect">
+       <%= image_tag "cas.png", class: "img-responsive", alt: "", width: "350", height:"300" %>
+     <div class="overlay">
+      <h2>CAS Exportaciones </h2>
+           <%= link_to "Info", cas_index_path, class: 'info' %>
+     </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-6 col-md-4">
+     <div class="hovereffect">
+       <%= image_tag "panamerica.jpg", class: "img-responsive", alt: "",width: "350", height:"300" %>
+     <div class="overlay">
+      <h2>Panamérica </h2>
+         <%= link_to "Info", panamerica_index_path, class: 'info' %>
+     </div>
+    </div>
+  </div>
+
+    <div class="col-6 col-md-4">
+     <div class="hovereffect">
+       <%= image_tag "agroworld.jpg", class: "img-responsive", alt: "", width: "350", height:"300" %>
+     <div class="overlay">
+      <h2>Agro Wordl </h2>
+      <p></p>
+      <%= link_to "Info", agroworld_index_path, class: 'info' %>
+     </div>
+    </div>
+  </div>
+
+   <div class="col-6 col-md-4">
+     <div class="hovereffect">
+       <%= image_tag "southamerican.png", class: "img-responsive", alt: "", width: "350", height:"300" %>
+     <div class="overlay">
+      <h2>South American Foods </h2>
+           <%= link_to "Info", south_index_path, class: 'info' %>
+     </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div id= "expo"class="container">
+    <div class="wtitle text-center text-dark" >
+      <h2 style="font-family: 'Comic Sans MS', cursive, sans-serif;font-weight: lighter;color:#8A8A8A;">El rubro "Cereales" ocupa el primer lugar de las exportaciones hacia EAU desde la Argentina, concentrando el 25% de los envíos.</h2>
+    </div>
+  
+
+
+<div id=tabla class="container">
+
+
+    <div class="wlt text-center text-light">
+      <h2 style="font-weight: bold">PRODUCTOS DEMANDADOS</h2>
+
+      <br><p style="font-size: 20px">A continuación, lista del ranking de los principales productos demandados
+por los EAU al país:</p>
+    </div>
+    <table class="table text-light">
+      <thead style="font-weight: bold">
+        <tr>
+          <th>Descripción del Producto</th>
+          <th>EAU Importa desde la Argentina (2016)</th>
+          <th>EAU Importa desde la Argentina (2017)</th>
+        </tr>
+      </thead>                
+      <tbody style="font-weight: normal; ">                    
+        <tr>
+          <td>Cereales</td>
+          <td>53.424</td>
+          <td>66.110</td>
+        </tr>
+        <tr>
+          <td>Residuos y desperdicios de las industrias
+alimentarias; alimentos preparados para
+animales</td>
+          <td>32.019</td>
+          <td>42.764</td>
+        </tr>
+        <tr>
+          <td>Azúcares y artículos de confitería</td>
+          <td>166</td>
+          <td>33.575</td>
+        </tr>
+        <tr>
+          <td>Máquinas, aparatos y artefactos mecánicos,
+reactores nucleares, calderas; partes de estas
+máquinas ...</td>
+          <td>904</td>
+          <td>21.754</td>
+        </tr>
+        <tr>
+          <td>Hortalizas, plantas, raíces y tubérculos
+alimenticios</td>
+          <td>6.480</td>
+          <td>18.632</td>
+        </tr>
+        <tr style="font-weight: normal; ">
+          <td>Manufacturas de fundición, de hierro o acero</td>
+          <th>25.255</th>
+          <th>11.874</th>
+        </tr>
+        <tr>
+          <td>Grasas y aceites animales o vegetales;
+productos de su desdoblamiento; grasas
+alimenticias ...</td>
+          <td>2.280</td>
+          <td>11.047</td>
+        </tr>
+        <tr>
+          <td>Frutas y frutos comestibles; cortezas de agrios
+(cítricos), melones o sandías</td>
+          <td>9.109</td>
+          <td>9.673</td>
+        </tr>
+        <tr>
+          <td>Carne y despojos comestibles</td>
+          <td>12.628</td>
+          <td>9.465</td>
+        </tr>
+          <tr style="font-weight: normal; ">
+            <td>Preparaciones de hortalizas, de frutas u otros
+frutos o demás partes de plantas</td>
+            <th>7.100</th>
+            <th>6.016</th>
+          </tr>
+        </tbody>
+      </table>
+   
+  
+</div>
+  <p></p>
+
+</div> 
+
+ <div id="estadistica">      
+ <canvas id="myChart" width="100" width="100" height="50">
+ <script>
+Chart.defaults.global.legend.display = false;
+var ctx = document.getElementById("myChart");
+var myDoughnutChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Cereales", "Residuos y desperdicios de las industrias alimentarias", "Azúcares y artículos de confitería", "Máquinas, aparatos y artefactos mecánicos,", "Hortalizas, plantas, raíces y tubérculos alimenticios", "Manufacturas defundición, de hierro o acero","Grasas y aceites animales o vegetales","Frutas y frutos comestibles","Carne y despojos comestibles","Preparaciones de hortalizas, de frutas u otros frutos o demás partes de plantas"],
+
+        datasets: [{
+            
+            data: [24.90, 16.10,12.64,8.20, 7.02, 4.47,4.16,3.64,3.56, 2.27],
+            backgroundColor: [
+                'rgba(192, 57, 43)',
+                'rgba(155, 89, 182)',
+                'rgba(41, 128, 185)',
+                'rgba(26, 188, 156)',
+                'rgba(39, 174, 96)',
+                'rgba(241, 196, 15)',
+                'rgba(230, 126, 34)',
+                'rgba(231, 76, 60)',
+                'rgba(142, 68, 173)',
+                'rgba(52, 152, 219)'
+            ],
+            borderColor: [
+                'rgba(205, 97, 85)',
+                'rgba(175, 122, 197)',
+                'rgba(84, 153, 199)',
+                'rgba(72, 201, 176)',
+                'rgba(82, 190, 128)',
+                'rgba(244, 208, 63)',
+                'rgba(235, 152, 78)',
+                'rgba(236, 112, 99)',
+                'rgba(165, 105, 189)',
+                'rgba(93, 173, 226)'
+            ],
+            borderWidth: 1
+        }]
+       
+    },
+    options: { 
+    scales: { 
+     xAxes: [{ 
+      ticks: { 
+       display: false 
+      } 
+     }] 
+
+    } 
+} 
+
+});
+</script>
+</canvas>
+</div>
+<p></p>
+
+ 
+
+
+<div id="about" class="container">
+
+ <section id="oportunities">
+  <div class="starter-template text-dark">
+
+    <i class="far fa-handshake" style="font-size:75px;color:#fff"></i>
+    <h1 class="mb-5 text-light" style="font-weight: bold" >OPORTUNIDADES COMERCIALES</h1>
+    <p class="text-light">El mercado de Emiratos Árabes Unidos representa un reto para el comercio de Tucumán, en este sentido, se ha desarrollado un análisis de potencialidad de oportunidades comerciales para las exportaciones tucumanas en varios escenarios, con el objetivo de identificar aquellos productos que demanda Emiratos Árabes Unidos y que Tucumán produce, pero no necesariamente ya exporta a dicho destino. Este análisis pretende ser una herramienta referencial para la toma decisiones.</p>
+   </div>
+    <div class="container">
+      <div class="row">
+        <div class=" col text-center text-light">
+      <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="text-align: center;"> OPORTUNIDADES FUERTES  </button> 
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+ <h6 class="card-subtitle mb-2 text-muted">Los productos evaluados e identificados son:</h6>
+    <ul style="font-family: Arial; text-align: left;" class="list-group list-group-flush text-dark">
+    <li style="font-family: Arial" class="list-group-item">Limones</li>
+    <li style="font-family: Arial" class="list-group-item">Miel natural</li>
+    <li style="font-family: Arial" class="list-group-item">Preparaciones alimentarias base de cereales, harina, almidón</li>
+    <li style="font-family: Arial" class="list-group-item">Frutillas (congeladas)</li>
+  </ul>
+
+    
+
+  </div>
+</div>
+
+        
+    </div>
+   <div class=" col text-center text-light" >
+      <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" style="text-align: center;"> OPORTUNIDADES INTERMEDIAS </button>
+<div class="collapse" id="collapseExample2">
+  <div class="card card-body" style= >
+     <h6 class="card-subtitle mb-2 text-muted" >Los productos evaluados e identificados son:</h6>
+    <ul class="list-group list-group-flush text-dark" style="text-align: left;">
+    <li style="font-family: Arial" class="list-group-item">Polvo p/ preparar postres</li>
+    <li style="font-family: Arial" class="list-group-item">Aparatos p/corte, seccionamiento, protección, derivación, empalme o conexión de circuitos eléctricos, p/una tensión <= a 1000 voltios</li>
+    <li style="font-family: Arial" class="list-group-item">Partes de válvulas tipo aerosol</li>
+    <li style="font-family: Arial" class="list-group-item">Paneles de instrumentos</li>
+    <li style="font-family: Arial" class="list-group-item">Cojinetes</li>
+    <li style="font-family: Arial" class="list-group-item">Cigüeñales excluidos forjados, de peso >= a 900 kg y longitud >= a 2.000 mm</li>
+    <li style="font-family: Arial" class="list-group-item">Inyectoras de combustible para motores de compresión</li>
+    <li style="font-family: Arial" class="list-group-item">Manufacturas de hierro o acero ncop</li>
+    <li style="font-family: Arial" class="list-group-item">Calzado de deporte</li>
+    <li style="font-family: Arial" class="list-group-item">Partes de embragues y órganos de acoplamiento</li>
+    <li style="font-family: Arial" class="list-group-item">Tornillos, pernos, incluidos c/tuercas y arandelas, roscados, de fundición, hierro o acero, ncop. Mezclas de jugos Oportunidad intermedia 401693 Juntas o empaquetaduras de caucho Destilados acuosos aromáticos de aceites esenciales</li>
+  </ul>
+    
+      
+  </div>
+</div>
+     
+    </div>
+    
+  </div>
+</div>
+  </section>
+</div>
+<br>
+
+<section>
+  <div class="container" id="contacto">
+    <div class="col text-center mb-5">
+      <h2 style="color: #1A5178; text-align: center;font-weight: bold ">CONTACTANOS</h2>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <p></p><br>
+        <h3 style="font-family: Arial; color: #1A5178"><i class="fas fa-map-marker-alt"></i> Dirección</h3>
+        <p>Córdoba 1039, San Miguel de Tucumán, Tucumán - Argentina</p><br>
+        <h3 style="font-family: Arial; color: #1A5178"><i class="fas fa-phone"></i></i> Teléfono</h3>
+        <p>+54 9 381 - 4218150</p><br>
+        <h3 style="font-family: Arial; color: #1A5178"><i class="fas fa-envelope"></i></i> E-Mail</h3>
+        <p>secdesarrolloproductivo@tucuman.gov.ar</p>
+      </div>
+
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+         <div class="form-group">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.4659442317375!2d-65.2141695499015!3d-26.825128595934167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1505b8ed89%3A0x4d59794784072dd3!2sC%C3%B3rdoba+1039%2C+T4000+San+Miguel+de+Tucum%C3%A1n%2C+Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1549550301852" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+</div>
+
+</body>
+</html>

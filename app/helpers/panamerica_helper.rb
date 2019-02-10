@@ -1,0 +1,2 @@
+module PanamericaHelper
+end

@@ -1,0 +1,2 @@
+module LopezHelper
+end

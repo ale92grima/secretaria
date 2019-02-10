@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Info</title>
+  
+  
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Sytles | Great Food and Wine</title>
+
+
+</head>
+
+
+
+  <!--       NAVBAR       -->
+<body>
+
+  
+
+
+
+
+
+
+
+    <%= yield %>
+
+
+
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="blogo col-xs-12 col-sm-12 col-md-12 col-lg-4">
+        <%= image_tag "logo.png", class: "img-responsive img-fluid" %>
+        
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+        <div class="cpt text-light text-center">
+          <p>© 2018-Secretaría de Estado de Desarrollo Productivo - Tucumán,Argentina</p>                    
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+        <div class="ftaw text-light text-center">
+
+          <a href="https://www.facebook.com/gobiernotucuman/"><i class="fab fa-facebook-square" style="color:#fff"></i></a> 
+          <a href="https://twitter.com/desarrolloprod"><i class="fab fa-twitter-square " style="color:#fff"></i></a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="bttp" class="btt">
+  <a href="#"><i class="fa fa-arrow-circle-up"></i></a>
+</div>
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+   <script>
+    myID = document.getElementById("bttp");
+
+    var myScrollFunc = function() {
+      var y = window.scrollY;
+      if (y >= 1200) {
+        myID.className = "btt show"
+      } else {
+        myID.className = "btt hide"
+      }
+    };
+
+    window.addEventListener("scroll", myScrollFunc);
+  </script>
+
+
+  </body>
+</html>
