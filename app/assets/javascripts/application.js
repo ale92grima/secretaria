@@ -1,10 +1,6 @@
-//= require_tree .
-//= require bootstrap
 //= require jquery
 //= require jquery_ujs
-//= require smooth-scroll
-//= require jquery.vide
-//= require nsc
+//= require bootstrap
 //= require Chart.min
-
+//= require_tree .
 

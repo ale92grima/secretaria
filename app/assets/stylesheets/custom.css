@@ -18,6 +18,7 @@ font-size: 16px;
  background-color:#1A5178 !important;
   opacity: 0.7; 
     filter:(opacity=70);
+    margin-top: 0;
      
 }
 
@@ -38,19 +39,23 @@ font-size: 16px;
 
 .carousel-caption {
     padding-bottom: 12%;
+
 }
 
 .carousel-caption h3 {
-    font-size: 48px;
+    
+    font-size: 28px;
     text-shadow: 1px 1px #B3B3B3;
     font-weight: bold;
 }
 
 .carousel-caption p {
-    font-size: 28px;
+   
+    font-size: 18px;
     text-shadow: 1px 1px #B3B3B3;
     color: #fff;
-}
+  }
+
 
 /* Buttons */
 
@@ -97,7 +102,7 @@ font-size: 16px;
 }
 /* Oportunities*/
 #oportunities {
-    padding: 20px 10px;
+    padding: 10px 10px;
     background: #1A5178;
  opacity: 0.8;
   filter:(opacity=80);
@@ -432,49 +437,3 @@ background-color : #1A5178;
 }
 
 
-/* Media Queries */
-
-@media only screen and (max-width:991px) {
-    .blogo {
-        text-align:center;
-    }   
-}
-
-@media only screen and (max-width:1500px) {
-    .carousel-caption {
-        padding-bottom: 8%;
-    }
-}
-
-@media only screen and (max-width:1199px) {
-    .carousel-caption h3 {
-        font-size: 32px;
-    }
-    .carousel-caption p {
-        font-size: 18px;
-    }    
-}
-
-@media only screen and (max-width:991px) {
-    .carousel-caption p {
-        display:none;
-    }   
-}
-
-@media only screen and (max-width:767px) {
-    .carousel-caption h3 {
-        font-size: 24px;
-    }
-    .carousel-caption {
-        padding-bottom: 6%;
-    }
-}
-
-@media only screen and (max-width:575px) {
-    #carouselFull {
-        display:none;
-    }
-    #about {
-        margin-top: 80px;
-    }
-}
